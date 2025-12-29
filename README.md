@@ -21,28 +21,10 @@ Tactile Internet (TI) requires achieving ultra-low latency and highly reliable p
 
 ## 🏗️ Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                    Leader-Follower Framework                        │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│   Human Side (Leader)              Robot Side (Follower)            │
-│   ┌─────────────────┐              ┌─────────────────┐              │
-│   │  12-Layer NN    │              │   8-Layer NN    │              │
-│   │  (100 units)    │◄────────────►│  (100 units)    │              │
-│   │  ReLU + Dropout │              │  ReLU + Dropout │              │
-│   └────────┬────────┘              └────────┬────────┘              │
-│            │                                │                       │
-│            ▼                                ▼                       │
-│   Max Mutual Info I(S_R, Ŝ_R)     Min KL(S_H || Ŝ_H)               │
-│                                                                     │
-│            └────────────┬───────────────────┘                       │
-│                         ▼                                           │
-│              MiniMax Optimization                                   │
-│              L(H,R,θ) = E[max I] - E[min KL]                       │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-```
+<img width="1273" height="479" alt="Screenshot 2025-12-29 at 16 31 17" src="https://github.com/user-attachments/assets/b7042900-3dfc-46f4-91ac-6bc6c1585cc2" />
+
+
+
 
 ## 📁 Project Structure
 
@@ -298,17 +280,17 @@ pytest tests/ --cov=lefo --cov-report=html
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{vahedifar2025signal,
-  title={Signal Prediction for Loss Mitigation in Tactile Internet: 
-         A Leader-Follower Game-Theoretic Approach},
-  author={Vahedifar, Mohammad Ali and Zhang, Qi},
-  booktitle={2025 IEEE International Workshop on Machine Learning 
-             for Signal Processing (MLSP)},
-  pages={1--6},
+@INPROCEEDINGS{11204284,
+  author={Ali Vahedifar, Mohammad and Zhang, Qi},
+  booktitle={2025 IEEE 35th International Workshop on Machine Learning for Signal Processing (MLSP)}, 
+  title={Signal Prediction for Loss Mitigation in Tactile Internet: a Leader-Follower Game-Theoretic Approach}, 
   year={2025},
-  organization={IEEE},
-  address={Istanbul, Turkey}
-}
+  volume={},
+  number={},
+  pages={01-06},
+  keywords={Tactile Internet;Accuracy;Upper bound;Packet loss;Signal processing algorithms;Games;Taylor series;Robustness;Delays;Robots;Tactile Internet;Signal Prediction;Stackelberg Game;Neural Network;Game Theory},
+  doi={10.1109/MLSP62443.2025.11204284}}
+
 ```
 
 ## 🤝 Contributing
@@ -329,13 +311,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This research was supported by:
 - **TOAST Project**: European Union's Horizon Europe research and innovation program under Marie Skłodowska-Curie Actions Doctoral Network (Grant Agreement No. 101073465)
-- **eTouch Project**: Danish Council for Independent Research (Grant No. 1127-00339B)
 - **NordForsk**: Nordic University Cooperation on Edge Intelligence (Grant No. 168043)
 
 ## 📧 Contact
 
 - **Mohammad Ali Vahedifar** - av@ece.au.dk
-- **Qi Zhang** - qz@ece.au.dk
+  
 
 DIGIT and Department of Electrical and Computer Engineering, Aarhus University, Denmark
 
