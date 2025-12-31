@@ -315,7 +315,7 @@ This research was supported by:
 
 ## 📧 Contact
 
-- **Mohammad Ali Vahedifar** - av@ece.au.dk
+- **Ali Vahedi** - av@ece.au.dk
   
 
 DIGIT and Department of Electrical and Computer Engineering, Aarhus University, Denmark
