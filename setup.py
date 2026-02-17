@@ -4,7 +4,7 @@
 Leader-Follower (LeFo): Signal Prediction for Loss Mitigation in Tactile Internet
 A Leader-Follower Game-Theoretic Approach
 
-Author: Mohammad Ali Vahedifar (av@ece.au.dk)
+Author: Ali Vahedi (av@ece.au.dk)
 Co-Author: Qi Zhang (qz@ece.au.dk)
 Institution: DIGIT and Department of Electrical and Computer Engineering, Aarhus University, Denmark
 
